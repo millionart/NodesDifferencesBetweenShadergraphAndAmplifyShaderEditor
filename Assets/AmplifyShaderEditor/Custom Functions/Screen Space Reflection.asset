@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Screen Space Reflection
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18935\n2459;73;2660;1326;1757.771;574.9711;1;True;False\nNode;AmplifyShaderEditor.FunctionInput;1;-905,-82.5;Inherit;False;viewDirectionWS;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;12;-604.771,-7.471207;Inherit;False;SSRParams
+    param@$param.wsView = wsView@$param.wsPos = wsPos@$param.normalWorld = normalWorld@$param.reflVec
+    = reflVec@$param.screenUV = screenUV@$$half4 color = GetSSRColor( param )@$return
+    color@;4;Create;5;False;wsView;FLOAT3;0,0,0;In;;Inherit;False;False;wsPos;FLOAT3;0,0,0;In;;Inherit;False;False;normalWorld;FLOAT3;0,0,0;In;;Inherit;False;False;reflVec;FLOAT3;0,0,0;In;;Inherit;False;False;screenUV;FLOAT2;0,0;In;;Inherit;False;ASEGetSSRColor;True;False;0;;False;5;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT2;0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionInput;8;-867.7708,-0.4711304;Inherit;False;positionWS;3;3;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;9;-878.7708,83.52887;Inherit;False;worldNormal;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;10;-877.7708,159.5289;Inherit;False;reflectVecor;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;11;-859.7708,233.5289;Inherit;False;screenUV;2;4;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-347,-4;Inherit;False;True;-1;Output;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nWireConnection;12;0;1;0\nWireConnection;12;1;8;0\nWireConnection;12;2;9;0\nWireConnection;12;3;10;0\nWireConnection;12;4;11;0\nWireConnection;0;0;12;0\nASEEND*/\n//CHKSM=86775EEDB8D6CE118602441DE9048E2003698E83"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives:
+    - {fileID: 0}
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems:
+    - LineType: 0
+      LineValue: Assets/#Liuyang/Water/Reflection_ASE.hlsl
+      GUIDToggle: 0
+      GUIDValue: 
+      Origin: 2
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: https://github.com/millionart/NodesDifferencesBetweenShadergraphAndAmplifyShaderEditor

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: UnpackNormalRG
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18935\n2459;73;2660;1326;-237.8741;580.3264;1;True;False\nNode;AmplifyShaderEditor.RegisterLocalVarNode;18;202.6604,-202.3367;Inherit;False;normal_xy;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SqrtOpNode;16;-373.3,132.9;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;10;-237.2999,84.89999;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.NormalizeNode;40;796.744,-58.4512;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;22;664.6085,-56.2428;Inherit;False;FLOAT3;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.ComponentMaskNode;31;-1317.394,311.755;Inherit;False;True;True;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.NormalVertexDataNode;12;-1484.3,316.9;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;1;-1492,-231.5;Inherit;False;packedNormal;4;1;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionSwitch;33;-1056.256,127.5488;Inherit;False;Z
+    From Vertex Normal;True;0;2;0;In 0;In 1;Object;-1;9;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DotProductOpNode;11;-790.2997,127.9;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;17;-393.3,57.90001;Inherit;False;Constant;_Float2;Float
+    2;0;0;Create;True;0;0;0;False;0;False;1E-16;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;14;-663.3,127.9;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.OneMinusNode;15;-520.3,127.9;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;4;-147,-241.5;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionSwitch;35;1769.744,-143.4512;Inherit;False;Two
+    Sided;False;0;3;1;On;Cull Back;Cull Front;Object;-1;9;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;5;-304,-192.5;Inherit;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;264.7004,-105.9;Inherit;False;scale;1;0;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;6;31,-203.5;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.ComponentMaskNode;24;-1310.394,-232.245;Inherit;False;True;True;False;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;20;388.6604,79.66327;Inherit;False;normal_z;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;7;-148,-138.5;Inherit;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;23;141.6062,82.755;Inherit;False;Z
+    From Vertex Normal;True;0;2;0;In 0;In 1;Instance;33;9;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;21;447.6085,-159.2428;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.VertexToFragmentNode;34;-83.25623,158.5488;Inherit;False;False;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SwitchByFaceNode;37;1248.744,-216.4512;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NegateNode;39;1091.744,197.5488;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;42;1756.066,25.83618;Inherit;False;Property;_TwoSided;Two
+    Sided;0;0;Create;True;0;0;0;False;0;False;0;1;1;True;;KeywordEnum;3;On;CullBack;CullFront;Create;True;True;All;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;2205,-133;Inherit;False;True;-1;Output;0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;18;0;6;0\nWireConnection;16;0;15;0\nWireConnection;10;0;17;0\nWireConnection;10;1;16;0\nWireConnection;40;0;22;0\nWireConnection;22;0;21;0\nWireConnection;22;2;20;0\nWireConnection;31;0;12;0\nWireConnection;33;0;24;0\nWireConnection;33;1;31;0\nWireConnection;11;0;33;0\nWireConnection;11;1;33;0\nWireConnection;14;0;11;0\nWireConnection;15;0;14;0\nWireConnection;4;0;24;0\nWireConnection;4;1;5;0\nWireConnection;35;0;37;0\nWireConnection;35;1;40;0\nWireConnection;35;2;39;0\nWireConnection;6;0;4;0\nWireConnection;6;1;7;0\nWireConnection;24;0;1;0\nWireConnection;20;0;23;0\nWireConnection;23;0;10;0\nWireConnection;23;1;34;0\nWireConnection;21;0;18;0\nWireConnection;21;1;2;0\nWireConnection;34;0;10;0\nWireConnection;37;0;40;0\nWireConnection;37;1;39;0\nWireConnection;39;0;40;0\nWireConnection;42;1;37;0\nWireConnection;42;0;40;0\nWireConnection;42;2;39;0\nWireConnection;0;0;35;0\nASEEND*/\n//CHKSM=B16C6D56991479298E244EBE1253F78972C442EF"
+  m_functionName: 
+  m_description: "    // must scale after reconstruction of normal.z which also\r\n   
+    // mirrors UnpackNormalRGB(). This does imply normal is not returned\r\n    //
+    as a unit length vector but doesn't need it since it will get normalized after
+    TBN transformation.\r\n    // If we ever need to blend contributions with built-in
+    shaders for URP\r\n    // then we should consider using UnpackDerivativeNormalAG()
+    instead like\r\n    // HDRP does since derivatives do not use renormalization
+    and unlike tangent space\r\n    // normals allow you to blend, accumulate and
+    scale contributions correctly."
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 12
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: https://github.com/millionart/NodesDifferencesBetweenShadergraphAndAmplifyShaderEditor

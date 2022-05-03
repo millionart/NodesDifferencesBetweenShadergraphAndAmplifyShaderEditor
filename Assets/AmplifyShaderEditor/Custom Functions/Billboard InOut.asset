@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Billboard InOut
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18935\n2459;73;2660;1326;1627;653;1;True;False\nNode;AmplifyShaderEditor.CustomExpressionNode;1;-343.5,-18;Inherit;False;//Calculate
+    new billboard vertex position and normal@$float3 upCamVec = float3( 0, 1, 0 )@$float3
+    forwardCamVec = -normalize ( UNITY_MATRIX_V._m20_m21_m22 )@$float3 rightCamVec
+    = normalize( UNITY_MATRIX_V._m00_m01_m02 )@$float4x4 rotationCamMatrix = float4x4(
+    rightCamVec, 0, upCamVec, 0, forwardCamVec, 0, 0, 0, 0, 1 )@$positionOS.x *=
+    length( GetObjectToWorldMatrix()._m00_m10_m20 )@$positionOS.y *= length( GetObjectToWorldMatrix()._m01_m11_m21
+    )@$positionOS.z *= length( GetObjectToWorldMatrix()._m02_m12_m22 )@$positionOS
+    = mul( positionOS, rotationCamMatrix )@$//positionOS.xyz += GetObjectToWorldMatrix()._m03_m13_m23@$//Need
+    to nullify rotation inserted by generated surface shader@$positionOS = mul( GetWorldToObjectMatrix(),
+    positionOS )@$return positionOS@;3;Create;1;True;positionOS;FLOAT3;0,0,0;In;;Inherit;False;Billboard;True;False;0;;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;2;-493.5,-27;Inherit;False;positionOS;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-92,-17;Inherit;False;True;-1;Output;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;1;0;2;0\nWireConnection;0;0;1;0\nASEEND*/\n//CHKSM=D1F12937E38882E77D77DE930A155FA2BBBCFE86"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: https://github.com/millionart/NodesDifferencesBetweenShadergraphAndAmplifyShaderEditor

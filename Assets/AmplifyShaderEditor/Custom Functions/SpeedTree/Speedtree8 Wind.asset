@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Speedtree8 Wind
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18935\n3092;73;2027;1286;1635.307;926.0736;1.3;True;False\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;16;-728.5781,48.53145;Inherit;False;3;4;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;15;-729.5781,-108.4685;Inherit;False;2;4;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;13;-719.5781,-440.4684;Inherit;False;0;4;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.PosVertexDataNode;11;-673.5781,-716.4686;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.NormalVertexDataNode;12;-674.5781,-583.4685;Inherit;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.TexCoordVertexDataNode;14;-726.5781,-272.4685;Inherit;False;1;4;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionInput;9;-656.7071,214.1424;Inherit;False;WindQuality;0;0;False;1;0;INT;4;False;1;INT;0\nNode;AmplifyShaderEditor.FunctionInput;10;-653.9016,358.0591;Inherit;False;Crossfade;0;2;False;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.FunctionInput;8;-657.4851,287.8091;Inherit;False;Billboard;0;1;False;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;1;30.1337,19.91099;Inherit;False;return
+    SpeedTreeWind_float(objectPosition,objectNormal,uv0,uv1,uv2,uv3,windQuality,billboard,crossfade)@;7;File;10;True;objectPosition;FLOAT3;0,0,0;In;;Inherit;False;True;objectNormal;FLOAT3;0,0,0;In;;Inherit;False;True;uv0;FLOAT4;0,0,0,0;In;;Inherit;False;True;uv1;FLOAT4;0,0,0,0;In;;Inherit;False;True;uv2;FLOAT4;0,0,0,0;In;;Inherit;False;True;uv3;FLOAT4;0,0,0,0;In;;Inherit;False;True;windQuality;FLOAT;0;In;;Inherit;False;True;billboard;OBJECT;0;In;bool;Inherit;False;True;crossfade;OBJECT;0;In;bool;Inherit;False;True;outPos;FLOAT3;0,0,0;Out;;Inherit;False;SpeedTreeWind;False;False;0;8b4aa8c48881d4142b1c30e408b503d8;True;11;0;FLOAT;0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT4;0,0,0,0;False;4;FLOAT4;0,0,0,0;False;5;FLOAT4;0,0,0,0;False;6;FLOAT4;0,0,0,0;False;7;FLOAT;0;False;8;OBJECT;0;False;9;OBJECT;0;False;10;FLOAT3;0,0,0;False;2;FLOAT;0;FLOAT3;11\nNode;AmplifyShaderEditor.FunctionOutput;0;294.0561,43.41097;Inherit;False;True;-1;windObjectPosition;0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;1;1;11;0\nWireConnection;1;2;12;0\nWireConnection;1;3;13;0\nWireConnection;1;4;14;0\nWireConnection;1;5;15;0\nWireConnection;1;6;16;0\nWireConnection;1;7;9;0\nWireConnection;1;8;8;0\nWireConnection;1;9;10;0\nWireConnection;0;0;1;11\nASEEND*/\n//CHKSM=66950CB2DFCA0552342EB7B3F614FD8E1F738F6D"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 
