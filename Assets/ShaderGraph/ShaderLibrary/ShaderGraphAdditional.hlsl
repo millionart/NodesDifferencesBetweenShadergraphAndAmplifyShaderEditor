@@ -1,5 +1,14 @@
 
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl"
+#include "Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightDefinition.cs.hlsl"
+
+// Light Color from ASE
+// For ShaderGraph
+StructuredBuffer<DirectionalLightData> _GetLightDatas;
+void LightColor_float(out real3 Out)
+{
+    Out = _GetLightDatas[0].color.rgb;
+}
 
 //  For ShaderGraph
 void UnpackNormalRG_float(real4 packedNormal, real scale, out real3 Out)
@@ -46,7 +55,7 @@ real4x4 Billboard_GetMatrix(real3 upCamVec)
     return rotationCamMatrix;
 }
 
-real3 Billboard_GetPositionOS_IgnoreRotation(real3 upCamVec, in real3 positionOS)
+real3 Billboard_GetPositionOS_IgnoreRotation(real3 upCamVec, real3 positionOS)
 {
     real4x4 rotationCamMatrix = Billboard_GetMatrix(upCamVec);
 
@@ -61,7 +70,7 @@ real3 Billboard_GetPositionOS_IgnoreRotation(real3 upCamVec, in real3 positionOS
     return positionOS;
 }
 
-real3 Billboard_GetPositionOS(real3 upCamVec, in real3 positionOS)
+real3 Billboard_GetPositionOS(real3 upCamVec, real3 positionOS)
 {
     real4x4 rotationCamMatrix = Billboard_GetMatrix(upCamVec);
 
@@ -74,7 +83,7 @@ real3 Billboard_GetPositionOS(real3 upCamVec, in real3 positionOS)
     return positionOS;
 }
 
-real3 Billboard_GetNormalOS(real3 upCamVec, in real3 normalOS)
+real3 Billboard_GetNormalOS(real3 upCamVec, real3 normalOS)
 {
     real4x4 rotationCamMatrix = Billboard_GetMatrix(upCamVec);
 
@@ -82,7 +91,7 @@ real3 Billboard_GetNormalOS(real3 upCamVec, in real3 normalOS)
     return normalOS;
 }
 
-real3 Billboard_GetTangentOS(real3 upCamVec, in real3 tangentOS)
+real3 Billboard_GetTangentOS(real3 upCamVec, real3 tangentOS)
 {
     real4x4 rotationCamMatrix = Billboard_GetMatrix(upCamVec);
 
@@ -91,16 +100,16 @@ real3 Billboard_GetTangentOS(real3 upCamVec, in real3 tangentOS)
 }
 
 //  For ShaderGraph
-void Billboard_IgnoreRotation_float(real3 upCamVec, in real3 positionOS, in real3 normalOS, in real3 tangentOS, out real3 out_positionOS, out real3 out_normalOS, out real3 out_tangentOS)
+void Billboard_IgnoreRotation_float(real3 upCamVec, real3 positionOS, real3 normalOS, real3 tangentOS, out real3 out_positionOS, out real3 out_normalOS, out real3 out_tangentOS)
 {
     out_positionOS = Billboard_GetPositionOS_IgnoreRotation(upCamVec, positionOS);
     out_normalOS = Billboard_GetNormalOS(upCamVec, normalOS);
     out_tangentOS = Billboard_GetTangentOS(upCamVec, tangentOS);
 }
 
-void Billboard_float(real3 upCamVec, in real3 positionOS, in real3 normalOS, in real3 tangentOS, out real3 out_positionOS,out real3 out_normalOS, out real3 out_tangentOS)
+void Billboard_float(real3 upCamVec, real3 positionOS, real3 normalOS, real3 tangentOS, out real3 out_positionOS, out real3 out_normalOS, out real3 out_tangentOS)
 {
-    out_positionOS = Billboard_GetPositionOS(upCamVec, positionOS);    
+    out_positionOS = Billboard_GetPositionOS(upCamVec, positionOS);
     out_normalOS = Billboard_GetNormalOS(upCamVec, normalOS);
     out_tangentOS = Billboard_GetTangentOS(upCamVec, tangentOS);
 }
