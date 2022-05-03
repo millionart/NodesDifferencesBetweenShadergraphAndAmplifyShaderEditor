@@ -100,7 +100,7 @@
     },
     "m_Path": "Artistic/Normal",
     "m_GraphPrecision": 0,
-    "m_PreviewMode": 2,
+    "m_PreviewMode": 0,
     "m_OutputNode": {
         "m_Id": "a1ae228e27b145abafad7a9d3fe0039a"
     },
