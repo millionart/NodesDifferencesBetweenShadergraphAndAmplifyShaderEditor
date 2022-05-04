@@ -73,7 +73,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "LightColor (Custom Function)",
+    "m_Name": "GetLightColor (Custom Function)",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -100,8 +100,8 @@
         "m_SerializableColors": []
     },
     "m_SourceType": 0,
-    "m_FunctionName": "LightColor",
-    "m_FunctionSource": "5a90d98ed622de24eab801ef560c54c3",
+    "m_FunctionName": "GetLightColor",
+    "m_FunctionSource": "ab1c660ccc7556c44b72650405da254e",
     "m_FunctionBody": "Enter function body here..."
 }
 
@@ -117,10 +117,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 0.0,
+            "x": 20.0,
             "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
+            "width": 86.0,
+            "height": 77.0
         }
     },
     "m_Slots": [
