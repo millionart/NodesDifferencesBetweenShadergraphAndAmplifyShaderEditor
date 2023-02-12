@@ -1,3 +1,8 @@
+## Usage:
+
+### Unity:
+Window > Package Manager > + > Add package from disk
+
 ## Roadmap:
 
 - [x] Add Shader Graph (v13.1.5) nodes

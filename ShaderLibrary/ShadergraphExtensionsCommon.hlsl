@@ -1,5 +1,17 @@
+#ifndef SHADERGRAPH_EXTENSIONS_COMMON
+#define SHADERGRAPH_EXTENSIONS_COMMON
 
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl"
+
+
+// void GetMainLightDirection_float(out real3 out_direction)
+// {
+//     #ifndef HAS_LIGHTLOOP
+//         out_direction = real3(0, 1, 0);
+//     #else
+//         out_direction = real3(1, 0, 0);
+//     #endif
+// }
 
 //  For ShaderGraph
 void UnpackNormalRG_float(real4 packedNormal, real scale, out real3 Out)
@@ -104,3 +116,26 @@ void Billboard_float(real3 upCamVec, real3 positionOS, real3 normalOS, real3 tan
     out_normalOS = Billboard_GetNormalOS(upCamVec, normalOS);
     out_tangentOS = Billboard_GetTangentOS(upCamVec, tangentOS);
 }
+
+real3 IsShadowCasterPass(real3 shadowCasterPass, real3 otherPass)
+{
+    real3 Out = 0;
+    #if (SHADERPASS == SHADERPASS_SHADOWCASTER)
+        Out = shadowCasterPass;
+    #else
+        Out = otherPass;
+    #endif
+    return Out;
+}
+
+void IsShadowCasterPass_float(real3 shadowCasterPass, real3 otherPass, out real3 Out)
+{
+    Out = IsShadowCasterPass(shadowCasterPass, otherPass);
+}
+
+void IsShadowCasterPass_half(real3 shadowCasterPass, real3 otherPass, out real3 Out)
+{
+    Out = IsShadowCasterPass(shadowCasterPass, otherPass);
+}
+
+#endif

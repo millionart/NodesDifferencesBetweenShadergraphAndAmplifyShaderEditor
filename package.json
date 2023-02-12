@@ -1,0 +1,18 @@
+{
+  "name": "com.millionart.shadergraphextensions",
+  "version": "0.0.1",
+  "displayName": "Shadergraph Extensions",
+  "description": "Shadergraph and Amplify Shader Editor Node Extensions",
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "author": {
+    "name": "millionart",
+    "email": "unity@example.com",
+    "url": "https://github.com/millionart/NodesDifferencesBetweenShadergraphAndAmplifyShaderEditor"
+  },
+  "dependencies": {
+  }
+}

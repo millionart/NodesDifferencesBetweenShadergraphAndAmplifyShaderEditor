@@ -1,22 +1,16 @@
 {
-    "m_SGVersion": 3,
+    "m_SGVersion": 2,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "92d7870b78f0414c9c90f2e150688d0b",
     "m_Properties": [
         {
-            "m_Id": "08c1a030de1248b9a8b0b2669b500950"
+            "m_Id": "5627eeabb538449fb79319e954a55c43"
         },
         {
-            "m_Id": "5627eeabb538449fb79319e954a55c43"
+            "m_Id": "08c1a030de1248b9a8b0b2669b500950"
         }
     ],
     "m_Keywords": [],
-    "m_Dropdowns": [],
-    "m_CategoryData": [
-        {
-            "m_Id": "4dfd89ba012241c398b42975a5d54dbb"
-        }
-    ],
     "m_Nodes": [
         {
             "m_Id": "a1ae228e27b145abafad7a9d3fe0039a"
@@ -95,11 +89,10 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        },
-        "preventRotation": false
+        }
     },
     "m_Path": "Artistic/Normal",
-    "m_GraphPrecision": 0,
+    "m_ConcretePrecision": 0,
     "m_PreviewMode": 0,
     "m_OutputNode": {
         "m_Id": "a1ae228e27b145abafad7a9d3fe0039a"
@@ -115,13 +108,9 @@
         "m_GuidSerialized": "f42355ec-8993-4bde-a73f-429c1286c292"
     },
     "m_Name": "UnpackedNormal",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "UnpackedNormal",
     "m_DefaultReferenceName": "_UnpackedNormal",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -207,18 +196,14 @@
         "m_GuidSerialized": "105f99e1-24df-430d-83c7-026ae28bd609"
     },
     "m_Name": "Scale",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Scale",
     "m_DefaultReferenceName": "_Scale",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.0,
+    "m_Value": 1.0,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -411,7 +396,7 @@
     },
     "m_SourceType": 0,
     "m_FunctionName": "UnpackNormalRG",
-    "m_FunctionSource": "6bec66ebe7bc7ad43828673369da3cfa",
+    "m_FunctionSource": "73b239414f1c02943bbb6469f29b7fef",
     "m_FunctionBody": "Enter function body here..."
 }
 
