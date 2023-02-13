@@ -74,5 +74,5 @@ Assets/HDRPDefaultResources
 Assets/SampleSceneAssets
 Assets/Scenes
 Assets/*.*
-**/*.meta
+# **/*.meta
 Assets/ShaderlabVSCode
